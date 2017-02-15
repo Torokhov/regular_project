@@ -30,7 +30,7 @@ describe("verifity", function() {
 
 describe("replaceQuotes", function() {
   it("Замена кавычек одинарных кавычек на двойные, исключая кавычки  в сокращениях слов типа aren’t", function() {
-    assert.equal(replaceQuotes("What's fuck is this?"), "What's fuck is this?");
     assert.equal(replaceQuotes("Misha says: 'I am stupid'"), 'Misha says: "I am stupid"');
+    assert.equal(replaceQuotes("What's fuck is this?"), "What's fuck is this?");
   });
 });
